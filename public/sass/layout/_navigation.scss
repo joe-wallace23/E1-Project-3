@@ -1,0 +1,98 @@
+.navbar{
+
+    background-color: #fff;
+
+ position: fixed;
+top: 2rem;
+right: 0;
+left: 0;
+z-index: 1030;
+   -webkit-box-shadow: 0px 3px 11px -3px rgba(0,0,0,0.68);
+    -moz-box-shadow: 0px 3px 11px -3px rgba(0,0,0,0.68);
+box-shadow: 0px 3px 11px -3px rgba(0,0,0,0.68);
+    &-brand img{
+        width: 11rem;
+    }
+    &-brand{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -.1rem
+    }
+   
+}
+.nav{
+    &-link{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: var(--color-button-and-links) !important;
+        letter-spacing: .1rem;
+        &:hover{
+            border-bottom: .2rem solid var(--color-button-and-links);
+        }
+    }
+}
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+.dropdown-menu .dropdown-item:hover{
+ background-color: transparent;
+ border-bottom: .1rem solid var(--color-button-and-links);
+ display: inline-block;
+}
+.dropdown-menu .dropdown-item{
+    text-transform: uppercase;
+    font-size: .9rem;
+   color: var(--color-button-and-links);
+   letter-spacing: .1rem;
+  
+   }
+.dropdown-menu{
+    background-color: #fff;
+    border: .1rem solid #ccc !important;
+}
+
+.social{
+
+    &__list{
+        list-style: none;
+    }
+    &__icon{
+        width: 1.7rem;
+        height: 1.7rem;
+        fill: var(--color-button-and-links);
+    }
+    &__Item{
+       display: inline-block;
+       margin-top: .5rem;
+    }
+    &__Item:not(:last-child){
+        margin-right: 1rem;
+     }
+}
+
+
+.navbar-toggler{
+    border: none !important;
+}
+.toggler-btn{
+    border: 2px solid var( --color-button-and-links);
+    padding: 5px;
+    transition: all 2s ease;
+}
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background: var( --color-button-and-links);
+    transition: all 0.5s ease;
+}
+.change .bar1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.change .bar2{
+    opacity: 0;
+}
+.change .bar3{
+    transform: rotate(45deg) translate(-5px, -8px);
+}

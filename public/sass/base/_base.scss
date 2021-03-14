@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+}
+body{
+
+    font-size: 62.5%;   // 10/16 =625.0 or 62.5% 1rem=10px
+    font-family: 'Roboto', sans-serif;
+    @include respond(tab-land){ //width < 1200 ?
+        font-size: 56.25%;  //1rem = 9px 9/16px = 50.25%
+    }
+    @include respond(tab-cells){
+        
+        font-size: 56.25%      //1rem = 9px 9/16px = 50.25% 
+    }
+    @include respond(tab-port){ //width < 900 ?
+        font-size: 50%;  //1rem = 8px 8/16px = 50%
+    }
+    @include respond(tab-you){
+        font-size: 50%;  //1rem = 8px 8/16px = 50%
+    }
+    @include respond(big-desktop){
+        font-size: 75%;   //1rem = 12, 12/16= 75%
+    }
+}

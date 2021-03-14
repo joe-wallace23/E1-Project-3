@@ -1,0 +1,13 @@
+.banner{
+    background-color: var( --color-main-background);
+    width: 100%; 
+    position: fixed;
+    z-index: 1030;
+    &__content p{
+        font-size: 1rem;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: .5rem;
+    }
+}

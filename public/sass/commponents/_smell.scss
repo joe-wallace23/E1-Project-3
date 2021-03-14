@@ -1,0 +1,27 @@
+.smell{
+    background-image: url(/images/toHome.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+
+    &__content{
+        padding-top: 14rem;
+    }
+    &__content h2{
+        font-size: 3rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    &__content h5{
+      font-size: 1.3rem;
+      color: #fff;
+      letter-spacing: .1rem;
+    }
+  
+} 
+::selection{
+    background-color:#2980b9 ;
+    color: #fff;
+}

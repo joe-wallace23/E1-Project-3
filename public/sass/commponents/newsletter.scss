@@ -1,0 +1,29 @@
+.success{
+    padding-top: 12rem;
+    &__content h2{
+        font-size: 2rem;
+        color: var(--color-button-and-links);
+        padding-bottom: 1rem;
+    }
+    &__content img{
+        width: 100%;
+    }
+    &__button{
+        margin-bottom: 2rem;
+    }
+    &__try{
+        font-size: 1.3rem;
+        color: #fff;
+        background-color: var(--color-button-and-links);
+        padding: .7rem 1.3rem;
+        border: .1rem solid var(--color-button-and-links);
+        border-radius: .3rem;
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+.success .col-lg-12{
+    margin-bottom: 5rem;
+}

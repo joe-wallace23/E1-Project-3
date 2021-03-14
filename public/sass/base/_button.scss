@@ -1,0 +1,37 @@
+.smell{
+    &__button{
+        margin-top: 2.5rem;
+
+        @include respond(phone){
+            margin-top: 1rem;
+        }
+    }
+    &__full{
+        @include buttonBoth;
+        border: .1rem solid var(--color-button-and-links);
+        background-color: var( --color-button-and-links);
+        margin-right: .8rem;
+
+        @include respond(phone){
+            font-size: .8rem;
+            padding: .5rem .3rem;
+        }
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    &__outline{
+        @include buttonBoth;
+        border: .1rem solid #fff;
+        background-color: transparent;
+        @include respond(phone){
+            font-size: .8rem;
+            padding: .5rem .3rem;
+        }
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
